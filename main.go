@@ -5,10 +5,11 @@ import "fmt"
 func main() {
 	fmt.Println("Hello Satisfactory Calculator")
 	out := Items{
-		NuclearPasta:            2,
-		ThermalPropulsionRocket: 2,
-		AssemblyDirectorSystem:  8,
-		MagneticFieldGenerator:  8,
+		HeavyModularFrame: 20,
+		// NuclearPasta:            2,
+		// ThermalPropulsionRocket: 2,
+		// AssemblyDirectorSystem:  8,
+		// MagneticFieldGenerator:  8,
 	}
 	fmt.Println(out)
 	in := parse(out)
