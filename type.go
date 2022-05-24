@@ -65,6 +65,7 @@ const (
 	Fuel
 	HeavyOilResidue
 	CrudeOil
+	PetroleumCoke
 )
 
 type Items map[ItemType]float64
@@ -150,6 +151,13 @@ var recipes = map[ItemType]Items{
 	CircuitBoard: {
 		Plastic:   10.0 / 7.0,
 		Quickwire: 30.0 / 7.0,
+	},
+	// CircuitBoard: {
+	// 	Rubber:        6,
+	// 	PetroleumCoke: 9,
+	// },
+	PetroleumCoke: {
+		HeavyOilResidue: 4.0 / 12.0,
 	},
 	Quickwire: {
 		CateriumIngot: 1.0 / 5.0,
@@ -258,12 +266,12 @@ var recipes = map[ItemType]Items{
 		IronIngot: 2.0 / 3.0,
 		Coal:      2.0 / 3.0,
 	},
-	// Rubber: {
-	// 	Fuel: 1,
-	// },
-	// Plastic: {
-	// 	Fuel: 1,
-	// },
+	Rubber: {
+		Fuel: 1,
+	},
+	Plastic: {
+		Fuel: 1,
+	},
 	Fuel: {
 		HeavyOilResidue: 5.0 / 10.0,
 		Water:           1,

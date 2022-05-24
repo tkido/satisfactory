@@ -69,11 +69,12 @@ func _() {
 	_ = x[Fuel-58]
 	_ = x[HeavyOilResidue-59]
 	_ = x[CrudeOil-60]
+	_ = x[PetroleumCoke-61]
 }
 
-const _ItemType_name = "NullIronOreIronIngotIronPlateCopperOreCopperIngotHeavyModularFrameAluminumCasingNitrogenGasNuclearPastaPressureConversionCubeFusedModularFrameRadioControlUnitCopperPowderThermalPropulsionRocketAssemblyDirectorSystemMagneticFieldGeneratorAluminumIngotModularFrameEncasedIndustrialBeamConcreteSteelPipeSteelIngotReinforcedIronPlateRubberWaterLimestoneCrystalOscillatorComputerQuartzCrystalCableRawQuartzWireCircuitBoardQuickwirePlasticCateriumIngotCateriumOreModularEngineTurboMotorCoolingSystemMotorHeatSinkSmartPlatingRotorStatorSupercomputerAdaptiveControlUnitElectromagneticControlRodBatteryAiLimiterCopperSheetAutomatedWiringSulfurAlcladAluminumSheetVersatileFrameworkSteelBeamCoalFuelHeavyOilResidueCrudeOil"
+const _ItemType_name = "NullIronOreIronIngotIronPlateCopperOreCopperIngotHeavyModularFrameAluminumCasingNitrogenGasNuclearPastaPressureConversionCubeFusedModularFrameRadioControlUnitCopperPowderThermalPropulsionRocketAssemblyDirectorSystemMagneticFieldGeneratorAluminumIngotModularFrameEncasedIndustrialBeamConcreteSteelPipeSteelIngotReinforcedIronPlateRubberWaterLimestoneCrystalOscillatorComputerQuartzCrystalCableRawQuartzWireCircuitBoardQuickwirePlasticCateriumIngotCateriumOreModularEngineTurboMotorCoolingSystemMotorHeatSinkSmartPlatingRotorStatorSupercomputerAdaptiveControlUnitElectromagneticControlRodBatteryAiLimiterCopperSheetAutomatedWiringSulfurAlcladAluminumSheetVersatileFrameworkSteelBeamCoalFuelHeavyOilResidueCrudeOilPetroleumCoke"
 
-var _ItemType_index = [...]uint16{0, 4, 11, 20, 29, 38, 49, 66, 80, 91, 103, 125, 142, 158, 170, 193, 215, 237, 250, 262, 283, 291, 300, 310, 329, 335, 340, 349, 366, 374, 387, 392, 401, 405, 417, 426, 433, 446, 457, 470, 480, 493, 498, 506, 518, 523, 529, 542, 561, 586, 593, 602, 613, 628, 634, 653, 671, 680, 684, 688, 703, 711}
+var _ItemType_index = [...]uint16{0, 4, 11, 20, 29, 38, 49, 66, 80, 91, 103, 125, 142, 158, 170, 193, 215, 237, 250, 262, 283, 291, 300, 310, 329, 335, 340, 349, 366, 374, 387, 392, 401, 405, 417, 426, 433, 446, 457, 470, 480, 493, 498, 506, 518, 523, 529, 542, 561, 586, 593, 602, 613, 628, 634, 653, 671, 680, 684, 688, 703, 711, 724}
 
 func (i ItemType) String() string {
 	if i < 0 || i >= ItemType(len(_ItemType_index)-1) {
